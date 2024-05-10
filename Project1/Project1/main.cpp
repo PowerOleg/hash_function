@@ -41,6 +41,7 @@ int main(int argc, char** argv)
 	std::string text = "";
 	while (true)
 	{
+
 		printf("¬ведите строку: ");
 		std::cin >> text;
 		if (text == "exit")
