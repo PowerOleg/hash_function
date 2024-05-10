@@ -41,6 +41,7 @@ int main(int argc, char** argv)
 	std::string text = "";
 	while (true)
 	{
+
 		printf("Введите строку: ");
 		std::cin >> text;
 		if (text == "exit")
@@ -48,7 +49,7 @@ int main(int argc, char** argv)
 			break;
 		}
 		int hashcode = real_string_hash(text, p, modul);
-		printf("Хэш строки %s = %d\n", text.c_str(), /*std::to_string(*/ hashcode/*).c_str()*/);
+		printf("Хэш строки %s = %d\n", text.c_str(), hashcode);
 	}
 	return 0;
 }
