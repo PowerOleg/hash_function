@@ -37,23 +37,23 @@ int main(int argc, char** argv)
 {
 	setlocale(LC_ALL, "ru");
 	int p = 0;
-	printf("Введите p: ");
+	printf("Р’РІРµРґРёС‚Рµ p: ");
 	std::cin >> p;
 	int modul = 0;
-	printf("Введите n: ");
+	printf("Р’РІРµРґРёС‚Рµ n: ");
 	std::cin >> modul;
 
 	std::string text = "";
 	while (true)
 	{
-		printf("Введите строку: ");
+		printf("Р’РІРµРґРёС‚Рµ СЃС‚СЂРѕРєСѓ: ");
 		std::cin >> text;
 		if (text == "exit")
 		{
 			break;
 		}
 		int hashcode = real_string_hash(text, p, modul);
-		printf("Хэш строки %s = %d\n", text.c_str(), hashcode);
+		printf("РҐСЌС€ СЃС‚СЂРѕРєРё %s = %d\n", text.c_str(), hashcode);
 	}
 	return 0;
 }
