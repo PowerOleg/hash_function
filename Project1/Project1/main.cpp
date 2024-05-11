@@ -1,5 +1,10 @@
 #include <iostream>
 #include <string>
+#if (MSVC)
+addcompileoptions("$<$<C_COMPILER_ID:MSVC>:/utf-8>")
+addcompileoptions("$<$<CXX_COMPILER_ID:MSVC>:/utf-8>")
+#endif()
+
 
 int simple_string_hash(std::string text)
 {
@@ -41,7 +46,6 @@ int main(int argc, char** argv)
 	std::string text = "";
 	while (true)
 	{
-
 		printf("¬ведите строку: ");
 		std::cin >> text;
 		if (text == "exit")
